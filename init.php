@@ -187,7 +187,7 @@ $kleeja_plugin['kj_sitemap_seo']['functions'] = array(
             }
             echo '</urlset>';
 
-            $SQL->free($result);
+            $SQL->freeresult($result);
 
             #at end, close sql connections & etc
             $SQL->close();
