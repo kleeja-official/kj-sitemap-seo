@@ -17,7 +17,7 @@ $kleeja_plugin['kj_sitemap_seo']['information'] = array(
     # Who wrote this plugin?
     'plugin_developer' => 'Kleeja.com',
     # This plugin version
-    'plugin_version' => '1.0',
+    'plugin_version' => '1.0.1',
     # Explain what is this plugin, why should I use it?
     'plugin_description' => array(
         'en' => 'Generate a sitemap and promote your content by notifying (ping) the search engine once at every new content addition to Kleeja',
@@ -187,7 +187,7 @@ $kleeja_plugin['kj_sitemap_seo']['functions'] = array(
             }
             echo '</urlset>';
 
-            $SQL->free($result);
+            $SQL->freeresult($result);
 
             #at end, close sql connections & etc
             $SQL->close();
